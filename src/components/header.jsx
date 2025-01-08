@@ -6,13 +6,13 @@ import { LinkIcon, LogOut } from "lucide-react";
 
 const Header = () => {
     const navigator= useNavigate();
-    const user=true;
+    const user=false;
   return (
     <nav className=" py-4 flex justify-between items-center">
         <Link>
-        <img src="/public/Logo.webp" className=" h-14 rounded-full" alt ="Logo"/>
+        <img src="/public/Logo.webp" className=" h-16 ml-6 mt-3 rounded-full" alt ="Logo"/>
         </Link>
-        <div>
+        <div className="mr-8 mt-3 ">
             {!user ? (  // if user is not logged in then show this button //
             <Button onClick={()=> navigator("/auth")}>Login</Button>
             // else show this dropdown menu //
