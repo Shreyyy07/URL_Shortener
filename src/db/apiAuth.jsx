@@ -20,12 +20,13 @@ export async function getCurrentUser() {
   if (!session.session) return null;
 
   // const {data, error} = await supabase.auth.getUser();
-
   if (error) throw new Error(error.message);
   return session.session?.user;
 }
 
+export async function signup({name, email, password, profile_pic});
+
 // How They Work Together
 // When an async function is called, it returns a promise.
 // Inside the function, await pauses execution until the promise is resolved/rejected.
-// The resolved value of the promise is returned by await.
+// The resolved value of the promise is returned by await//
