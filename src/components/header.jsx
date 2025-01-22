@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <nav className=" py-4 flex justify-between items-center">
         <Link>
-        <img src="/public/Logo.webp" className=" h-16 ml-6 mt-3 rounded-full" alt ="Logo"/>
+        <img src="Logo.webp" className=" h-16 ml-6 mt-3 rounded-full" alt ="Logo"/>
         </Link>
         <div className="mr-8 mt-3 ">
             {!user ? (  // if user is not logged in then show this button //

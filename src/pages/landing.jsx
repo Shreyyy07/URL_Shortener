@@ -17,9 +17,11 @@ const LandingPage = () => {
 
 
   const handleShorten = (e) => {
+    // prevent the default behavior of the form submission. //
     e.preventDefault();
-    // if Long URL is there then navigate to auth page using navigator //
-    if(longURL)navigate(`/auth?createNew=${longURL}`); 
+    // if Long URL is there (not empty), then navigate to auth page using navigator //
+    if(longURL){
+      navigate(`/auth?createNew=${longURL}`); }
   };
 
   return (
@@ -28,7 +30,8 @@ const LandingPage = () => {
       The best Application to Shorten your URL 
      </h2>
      <form 
-       onSubmit={handleShorten}
+       onSubmit={handleShorten} // triggers when the form is submitted. //
+
      className="sm:h-14 flex flex-col sm:flex-row w-full md:w-2/4 gap-2">
       <Input 
         type="url" 

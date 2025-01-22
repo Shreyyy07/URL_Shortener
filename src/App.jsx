@@ -6,7 +6,8 @@ import Dashboard from "./pages/dashboard"
 import Link from "./pages/link"
 import RedirectLink from "./pages/redirect-link"
 import Auth from "./pages/auth"
-import {UrlProvider} from "./context"
+import UrlProvider from "./context";
+import RequireAuth from "./components/require-auth"
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,9 @@ const router = createBrowserRouter([
       },
       {
         path:"/dashboard",
-        element: <Dashboard/>,
+        element: <RequireAuth>
+          <Dashboard/>
+        </RequireAuth>
       },
       {
         path:"/auth",
@@ -26,7 +29,10 @@ const router = createBrowserRouter([
       },
       {
         path:"/link/:id",   //dynamic routhing//
-        element: <Link/>,
+        element: <RequireAuth>
+          <Link/>
+          </RequireAuth>
+
       },
       {
         path:"/:id",               //shortened URL//
@@ -36,6 +42,8 @@ const router = createBrowserRouter([
   }
 ]);
 function App(){
-  return <UrlProvider><RouterProvider router={router}/></UrlProvider>
+  return <UrlProvider>
+    <RouterProvider router={router}/>
+    </UrlProvider>
 }
 export default App
