@@ -26,7 +26,7 @@ const LandingPage = () => {
 
   return (
     <div className="flex flex-col items-center">
-     <h2 className="my-10 sm:my-16 text-3xl sm:text-6xl lg:text-7xl text-center text-white font-extrabold ">
+     <h2 className="my-10 sm:my-16 text-5xl sm:text-6xl lg:text-7xl text-center text-white font-extrabold ">
       The best Application to Shorten your URL 
      </h2>
      <form 
