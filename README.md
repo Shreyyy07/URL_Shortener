@@ -1,8 +1,22 @@
-# React + Vite
+# URL Shortener
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>🚀 Features</h2>
+<ul>
+    <li>🔗 Shorten long URLs</li>
+    <li>📜 Store and manage shortened links</li>
+    <li>📸 Generate QR codes for each shortened URL</li>
+    <li>📊 Track usage statistics (optional, if implemented)</li>
+    <li>🎨 Modern UI with ShadCN and Tailwind CSS</li>
+    <li>🔥 Powered by Supabase for backend and database</li>
+</ul>
 
-Currently, two official plugins are available:
+<h2>🛠 Tech Stack</h2>
+<ul>
+    <li><strong>Frontend:</strong> React.js, ShadCN, Tailwind CSS</li>
+    <li><strong>Backend:</strong> Supabase (Database & Authentication)</li>
+    <li><strong>QR Code Generation:</strong> qrcode.react</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>📜 License</h2>
+<p>This project is licensed under the MIT License.</p>
+
